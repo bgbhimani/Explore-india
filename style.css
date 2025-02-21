@@ -1,0 +1,110 @@
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    /* background: rgb(172, 0, 0); */
+    /* background-color: #b5542d; */
+    /* 50% transparent black */
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f0ad4e !important;
+}
+
+
+/* carousel  */
+.carousel-item img {
+    height: 400px;
+    /* Reduced height */
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-item {
+    transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+/* highlighted Images */
+.event-highlighted-img {
+    width: 200px;
+    height: 340px;
+}
+
+/* Hide Scrollbar */
+.event-container .row::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Snow Treks */
+.event-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.event-img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Event-Card */
+.event-card img {
+    height: 210px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* About Us File */
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* kedarkntha carousol */
+#trek-carousel {
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* kedarkantha Fees included icons */
+.icon-container {
+    text-align: center;
+    margin: 15px 0;
+}
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin: auto;
+}
+.icon-circle i {
+    font-size: 30px;
+    color: #db3545;
+    /* color: #d35400; */
+}
