@@ -1,8 +1,8 @@
-// Nav-bar And Footer
+// Function to load the navigation bar and footer from an external HTML file
 async function loadComponents() {
     try {
-        const response = await fetch('navbar-footer.html');
-        const html = await response.text();
+        const response = await fetch('navbar-footer.html'); // Fetch the HTML file
+        const html = await response.text(); // Get the text content of the file
         
         document.getElementById('the-navbar').innerHTML = html.match(/<nav[\s\S]*?<\/nav>/)[0];
         document.getElementById('the-footer').innerHTML = html.match(/<footer[\s\S]*?<\/footer>/)[0];
@@ -70,4 +70,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById('total-amount').textContent = totalAmount;
     document.getElementById('total-person').textContent = totalPerson;
-}); 
+});
